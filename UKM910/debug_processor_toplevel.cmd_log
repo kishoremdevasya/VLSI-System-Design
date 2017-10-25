@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/Kishore/Documents/MS/IMTEK/ILIAS/SS 2017/VLSI System Design/Project/code base/UKM910_INTR_HNDL/debug_processor_toplevel.xst" -ofn "C:/Users/Kishore/Documents/MS/IMTEK/ILIAS/SS 2017/VLSI System Design/Project/code base/UKM910_INTR_HNDL/debug_processor_toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/Kishore/Documents/MS/IMTEK/ILIAS/SS 2017/VLSI System Design/Project/Project Files/Project Files/debug_processor.ucf" -p xc3s500e-fg320-4 "debug_processor_toplevel.ngc" debug_processor_toplevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_processor_toplevel_map.ncd debug_processor_toplevel.ngd debug_processor_toplevel.pcf 
+par -w -intstyle ise -ol high -t 1 debug_processor_toplevel_map.ncd debug_processor_toplevel.ncd debug_processor_toplevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml debug_processor_toplevel.twx debug_processor_toplevel.ncd -o debug_processor_toplevel.twr debug_processor_toplevel.pcf 
+bitgen -intstyle ise -f debug_processor_toplevel.ut debug_processor_toplevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Kishore/Documents/MS/IMTEK/ILIAS/SS 2017/VLSI System Design/Project/code base/UKM910_INTR_HNDL/debug_processor_toplevel.xst" -ofn "C:/Users/Kishore/Documents/MS/IMTEK/ILIAS/SS 2017/VLSI System Design/Project/code base/UKM910_INTR_HNDL/debug_processor_toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/Kishore/Documents/MS/IMTEK/ILIAS/SS 2017/VLSI System Design/Project/Project Files/Project Files/debug_processor.ucf" -p xc3s500e-fg320-4 "debug_processor_toplevel.ngc" debug_processor_toplevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_processor_toplevel_map.ncd debug_processor_toplevel.ngd debug_processor_toplevel.pcf 
+par -w -intstyle ise -ol high -t 1 debug_processor_toplevel_map.ncd debug_processor_toplevel.ncd debug_processor_toplevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml debug_processor_toplevel.twx debug_processor_toplevel.ncd -o debug_processor_toplevel.twr debug_processor_toplevel.pcf 
+bitgen -intstyle ise -f debug_processor_toplevel.ut debug_processor_toplevel.ncd 

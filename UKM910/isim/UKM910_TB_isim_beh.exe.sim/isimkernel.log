@@ -1,0 +1,29 @@
+Command line:
+   UKM910_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52472
+
+Tue Jun 20 17:53:26 2017
+
+
+ Elaboration Time: 0.421204 sec
+
+ Current Memory Usage: 709.992 Meg
+
+ Total Signals          : 415
+ Total Nets             : 33710
+ Total Signal Drivers   : 111
+ Total Blocks           : 66
+ Total Primitive Blocks : 60
+ Total Processes        : 69
+ Total Traceable Variables  : 60
+ Total Scalar Nets and Variables : 35101
+Total Line Count : 513
+
+ Total Simulation Time: 1.01401 sec
+
+ Current Memory Usage: 709.992 Meg
+
+Wed Jun 21 00:54:26 2017
+

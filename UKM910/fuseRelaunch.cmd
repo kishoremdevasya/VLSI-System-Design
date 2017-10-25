@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Kishore/Documents/MS/IMTEK/ILIAS/SS 2017/VLSI System Design/Project/code base/UKM910_INTR_HNDL/UKM910_TB_isim_beh.exe" -prj "C:/Users/Kishore/Documents/MS/IMTEK/ILIAS/SS 2017/VLSI System Design/Project/code base/UKM910_INTR_HNDL/UKM910_TB_beh.prj" "work.UKM910_TB" 

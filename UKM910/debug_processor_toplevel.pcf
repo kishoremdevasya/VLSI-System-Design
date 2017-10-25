@@ -1,0 +1,204 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Jun 19 21:44:28 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
+COMP "leds<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "leds<1>" LOCATE = SITE "E12" LEVEL 1;
+COMP "leds<2>" LOCATE = SITE "E11" LEVEL 1;
+COMP "leds<3>" LOCATE = SITE "F11" LEVEL 1;
+COMP "leds<4>" LOCATE = SITE "C11" LEVEL 1;
+COMP "leds<5>" LOCATE = SITE "D11" LEVEL 1;
+COMP "leds<6>" LOCATE = SITE "E9" LEVEL 1;
+COMP "leds<7>" LOCATE = SITE "F9" LEVEL 1;
+COMP "reset" LOCATE = SITE "L13" LEVEL 1;
+COMP "rot_a" LOCATE = SITE "K18" LEVEL 1;
+COMP "rot_b" LOCATE = SITE "G18" LEVEL 1;
+COMP "rot_btn" LOCATE = SITE "V16" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk = BEL "debug_module_inst/led_state_0" BEL
+        "debug_module_inst/led_state_1" BEL "debug_module_inst/led_state_2"
+        BEL "debug_module_inst/led_state_3" BEL
+        "debug_module_inst/led_state_4" BEL "debug_module_inst/led_state_5"
+        BEL "debug_module_inst/led_state_6" BEL
+        "debug_module_inst/led_state_7" BEL
+        "debug_module_inst/clk_div_counter_24" BEL
+        "debug_module_inst/clk_div_counter_23" BEL
+        "debug_module_inst/clk_div_counter_22" BEL
+        "debug_module_inst/clk_div_counter_21" BEL
+        "debug_module_inst/clk_div_counter_20" BEL
+        "debug_module_inst/clk_div_counter_19" BEL
+        "debug_module_inst/clk_div_counter_18" BEL
+        "debug_module_inst/clk_div_counter_17" BEL
+        "debug_module_inst/clk_div_counter_16" BEL
+        "debug_module_inst/clk_div_counter_15" BEL
+        "debug_module_inst/clk_div_counter_14" BEL
+        "debug_module_inst/clk_div_counter_13" BEL
+        "debug_module_inst/clk_div_counter_12" BEL
+        "debug_module_inst/clk_div_counter_11" BEL
+        "debug_module_inst/clk_div_counter_10" BEL
+        "debug_module_inst/clk_div_counter_9" BEL
+        "debug_module_inst/clk_div_counter_8" BEL
+        "debug_module_inst/clk_div_counter_7" BEL
+        "debug_module_inst/clk_div_counter_6" BEL
+        "debug_module_inst/clk_div_counter_5" BEL
+        "debug_module_inst/clk_div_counter_4" BEL
+        "debug_module_inst/clk_div_counter_3" BEL
+        "debug_module_inst/clk_div_counter_2" BEL
+        "debug_module_inst/clk_div_counter_1" BEL
+        "debug_module_inst/clk_div_counter_0" BEL
+        "debug_module_inst/led_toggle_en_7" BEL
+        "debug_module_inst/led_toggle_en_6" BEL
+        "debug_module_inst/led_toggle_en_5" BEL
+        "debug_module_inst/led_toggle_en_4" BEL
+        "debug_module_inst/led_toggle_en_3" BEL
+        "debug_module_inst/led_toggle_en_2" BEL
+        "debug_module_inst/led_toggle_en_1" BEL
+        "debug_module_inst/led_toggle_en_0" BEL "debug_module_inst/led_clk"
+        BEL "debug_module_inst/Mtridata_dataIO_15" BEL
+        "debug_module_inst/Mtridata_dataIO_14" BEL
+        "debug_module_inst/Mtridata_dataIO_13" BEL
+        "debug_module_inst/Mtridata_dataIO_7" BEL
+        "debug_module_inst/Mtridata_dataIO_6" BEL
+        "debug_module_inst/Mtridata_dataIO_5" BEL
+        "debug_module_inst/Mtridata_dataIO_4" BEL
+        "debug_module_inst/Mtridata_dataIO_3" BEL
+        "debug_module_inst/Mtridata_dataIO_2" BEL
+        "debug_module_inst/Mtridata_dataIO_1" BEL
+        "debug_module_inst/Mtridata_dataIO_0" BEL
+        "debug_module_inst/Mtrien_dataIO" BEL "debug_module_inst/rot_left" BEL
+        "debug_module_inst/rot_push" BEL "debug_module_inst/rot_btn_del_1" BEL
+        "debug_module_inst/rot_btn_del_0" BEL "debug_module_inst/toggle_led"
+        BEL "debug_module_inst/rot_right" BEL
+        "UKM901_1/control/state_FSM_FFd5" BEL
+        "UKM901_1/control/state_FSM_FFd50" BEL
+        "UKM901_1/control/state_FSM_FFd12" BEL
+        "UKM901_1/control/state_FSM_FFd10" BEL
+        "UKM901_1/control/state_FSM_FFd8" BEL
+        "UKM901_1/control/state_FSM_FFd6" BEL
+        "UKM901_1/control/state_FSM_FFd1" BEL
+        "UKM901_1/control/state_FSM_FFd52" BEL
+        "UKM901_1/control/state_FSM_FFd19" BEL
+        "UKM901_1/control/state_FSM_FFd18" BEL
+        "UKM901_1/control/state_FSM_FFd17" BEL
+        "UKM901_1/control/state_FSM_FFd16" BEL
+        "UKM901_1/control/state_FSM_FFd15" BEL
+        "UKM901_1/control/state_FSM_FFd13" BEL
+        "UKM901_1/control/state_FSM_FFd14" BEL
+        "UKM901_1/control/state_FSM_FFd11" BEL
+        "UKM901_1/control/state_FSM_FFd9" BEL
+        "UKM901_1/control/state_FSM_FFd7" BEL
+        "UKM901_1/control/state_FSM_FFd4" BEL
+        "UKM901_1/control/state_FSM_FFd3" BEL
+        "UKM901_1/control/state_FSM_FFd2" BEL
+        "UKM901_1/control/state_FSM_FFd53" BEL
+        "UKM901_1/control/state_FSM_FFd54" BEL
+        "UKM901_1/control/state_FSM_FFd49" BEL
+        "UKM901_1/control/state_FSM_FFd51" BEL
+        "UKM901_1/control/state_FSM_FFd47" BEL
+        "UKM901_1/control/state_FSM_FFd46" BEL
+        "UKM901_1/control/state_FSM_FFd48" BEL
+        "UKM901_1/control/state_FSM_FFd45" BEL
+        "UKM901_1/control/state_FSM_FFd44" BEL
+        "UKM901_1/control/state_FSM_FFd43" BEL
+        "UKM901_1/control/state_FSM_FFd42" BEL
+        "UKM901_1/control/state_FSM_FFd40" BEL
+        "UKM901_1/control/state_FSM_FFd39" BEL
+        "UKM901_1/control/state_FSM_FFd41" BEL
+        "UKM901_1/control/state_FSM_FFd38" BEL
+        "UKM901_1/control/state_FSM_FFd37" BEL
+        "UKM901_1/control/state_FSM_FFd36" BEL
+        "UKM901_1/control/state_FSM_FFd35" BEL
+        "UKM901_1/control/state_FSM_FFd33" BEL
+        "UKM901_1/control/state_FSM_FFd32" BEL
+        "UKM901_1/control/state_FSM_FFd34" BEL
+        "UKM901_1/control/state_FSM_FFd31" BEL
+        "UKM901_1/control/state_FSM_FFd30" BEL
+        "UKM901_1/control/state_FSM_FFd29" BEL
+        "UKM901_1/control/state_FSM_FFd28" BEL
+        "UKM901_1/control/state_FSM_FFd26" BEL
+        "UKM901_1/control/state_FSM_FFd25" BEL
+        "UKM901_1/control/state_FSM_FFd27" BEL
+        "UKM901_1/control/state_FSM_FFd23" BEL
+        "UKM901_1/control/state_FSM_FFd22" BEL
+        "UKM901_1/control/state_FSM_FFd24" BEL
+        "UKM901_1/control/state_FSM_FFd20" BEL
+        "UKM901_1/control/state_FSM_FFd21" BEL "UKM901_1/accumalator/q_15" BEL
+        "UKM901_1/accumalator/q_14" BEL "UKM901_1/accumalator/q_13" BEL
+        "UKM901_1/accumalator/q_12" BEL "UKM901_1/accumalator/q_11" BEL
+        "UKM901_1/accumalator/q_10" BEL "UKM901_1/accumalator/q_9" BEL
+        "UKM901_1/accumalator/q_8" BEL "UKM901_1/accumalator/q_7" BEL
+        "UKM901_1/accumalator/q_6" BEL "UKM901_1/accumalator/q_5" BEL
+        "UKM901_1/accumalator/q_4" BEL "UKM901_1/accumalator/q_3" BEL
+        "UKM901_1/accumalator/q_2" BEL "UKM901_1/accumalator/q_1" BEL
+        "UKM901_1/accumalator/q_0" BEL "UKM901_1/IR/q_15" BEL
+        "UKM901_1/IR/q_14" BEL "UKM901_1/IR/q_13" BEL "UKM901_1/IR/q_12" BEL
+        "UKM901_1/IR/q_11" BEL "UKM901_1/IR/q_10" BEL "UKM901_1/IR/q_9" BEL
+        "UKM901_1/IR/q_8" BEL "UKM901_1/IR/q_7" BEL "UKM901_1/IR/q_6" BEL
+        "UKM901_1/IR/q_5" BEL "UKM901_1/IR/q_4" BEL "UKM901_1/IR/q_3" BEL
+        "UKM901_1/IR/q_2" BEL "UKM901_1/IR/q_1" BEL "UKM901_1/IR/q_0" BEL
+        "UKM901_1/PC/q_15" BEL "UKM901_1/PC/q_14" BEL "UKM901_1/PC/q_13" BEL
+        "UKM901_1/PC/q_12" BEL "UKM901_1/PC/q_11" BEL "UKM901_1/PC/q_10" BEL
+        "UKM901_1/PC/q_9" BEL "UKM901_1/PC/q_8" BEL "UKM901_1/PC/q_7" BEL
+        "UKM901_1/PC/q_6" BEL "UKM901_1/PC/q_5" BEL "UKM901_1/PC/q_4" BEL
+        "UKM901_1/PC/q_3" BEL "UKM901_1/PC/q_2" BEL "UKM901_1/PC/q_1" BEL
+        "UKM901_1/PC/q_0" BEL "UKM901_1/SP/q_15" BEL "UKM901_1/SP/q_14" BEL
+        "UKM901_1/SP/q_13" BEL "UKM901_1/SP/q_12" BEL "UKM901_1/SP/q_11" BEL
+        "UKM901_1/SP/q_10" BEL "UKM901_1/SP/q_9" BEL "UKM901_1/SP/q_8" BEL
+        "UKM901_1/SP/q_7" BEL "UKM901_1/SP/q_6" BEL "UKM901_1/SP/q_5" BEL
+        "UKM901_1/SP/q_4" BEL "UKM901_1/SP/q_3" BEL "UKM901_1/SP/q_2" BEL
+        "UKM901_1/SP/q_1" BEL "UKM901_1/SP/q_0" BEL "UKM901_1/PTR1/q_15" BEL
+        "UKM901_1/PTR1/q_14" BEL "UKM901_1/PTR1/q_13" BEL "UKM901_1/PTR1/q_12"
+        BEL "UKM901_1/PTR1/q_11" BEL "UKM901_1/PTR1/q_10" BEL
+        "UKM901_1/PTR1/q_9" BEL "UKM901_1/PTR1/q_8" BEL "UKM901_1/PTR1/q_7"
+        BEL "UKM901_1/PTR1/q_6" BEL "UKM901_1/PTR1/q_5" BEL
+        "UKM901_1/PTR1/q_4" BEL "UKM901_1/PTR1/q_3" BEL "UKM901_1/PTR1/q_2"
+        BEL "UKM901_1/PTR1/q_1" BEL "UKM901_1/PTR1/q_0" BEL
+        "UKM901_1/PTR2/q_15" BEL "UKM901_1/PTR2/q_14" BEL "UKM901_1/PTR2/q_13"
+        BEL "UKM901_1/PTR2/q_12" BEL "UKM901_1/PTR2/q_11" BEL
+        "UKM901_1/PTR2/q_10" BEL "UKM901_1/PTR2/q_9" BEL "UKM901_1/PTR2/q_8"
+        BEL "UKM901_1/PTR2/q_7" BEL "UKM901_1/PTR2/q_6" BEL
+        "UKM901_1/PTR2/q_5" BEL "UKM901_1/PTR2/q_4" BEL "UKM901_1/PTR2/q_3"
+        BEL "UKM901_1/PTR2/q_2" BEL "UKM901_1/PTR2/q_1" BEL
+        "UKM901_1/PTR2/q_0" BEL "UKM901_1/PTR3/q_15" BEL "UKM901_1/PTR3/q_14"
+        BEL "UKM901_1/PTR3/q_13" BEL "UKM901_1/PTR3/q_12" BEL
+        "UKM901_1/PTR3/q_11" BEL "UKM901_1/PTR3/q_10" BEL "UKM901_1/PTR3/q_9"
+        BEL "UKM901_1/PTR3/q_8" BEL "UKM901_1/PTR3/q_7" BEL
+        "UKM901_1/PTR3/q_6" BEL "UKM901_1/PTR3/q_5" BEL "UKM901_1/PTR3/q_4"
+        BEL "UKM901_1/PTR3/q_3" BEL "UKM901_1/PTR3/q_2" BEL
+        "UKM901_1/PTR3/q_1" BEL "UKM901_1/PTR3/q_0" BEL "UKM901_1/PSW/q_15"
+        BEL "UKM901_1/PSW/q_14" BEL "UKM901_1/PSW/q_13" BEL
+        "UKM901_1/PSW/q_12" BEL "UKM901_1/PSW/q_11" BEL "UKM901_1/PSW/q_10"
+        BEL "UKM901_1/PSW/q_9" BEL "UKM901_1/PSW/q_8" BEL "UKM901_1/PSW/q_7"
+        BEL "UKM901_1/PSW/q_6" BEL "UKM901_1/PSW/q_5" BEL "UKM901_1/PSW/q_4"
+        BEL "UKM901_1/PSW/q_3" BEL "UKM901_1/PSW/q_2" BEL "UKM901_1/PSW/q_1"
+        BEL "UKM901_1/PSW/q_0" BEL "UKM901_1/IEN/q_15" BEL "UKM901_1/IEN/q_14"
+        BEL "UKM901_1/IEN/q_13" BEL "UKM901_1/IEN/q_12" BEL
+        "UKM901_1/IEN/q_11" BEL "UKM901_1/IEN/q_10" BEL "UKM901_1/IEN/q_9" BEL
+        "UKM901_1/IEN/q_8" BEL "UKM901_1/IEN/q_7" BEL "UKM901_1/IEN/q_6" BEL
+        "UKM901_1/IEN/q_5" BEL "UKM901_1/IEN/q_4" BEL "UKM901_1/IEN/q_3" BEL
+        "UKM901_1/IEN/q_2" BEL "UKM901_1/IEN/q_1" BEL "UKM901_1/IEN/q_0" BEL
+        "UKM901_1/IFLAGREG/q_15" BEL "UKM901_1/IFLAGREG/q_14" BEL
+        "UKM901_1/IFLAGREG/q_13" BEL "UKM901_1/IFLAGREG/q_9" BEL
+        "UKM901_1/IFLAGREG/q_12" BEL "UKM901_1/IFLAGREG/q_8" BEL
+        "UKM901_1/IFLAGREG/q_11" BEL "UKM901_1/IFLAGREG/q_7" BEL
+        "UKM901_1/IFLAGREG/q_10" BEL "UKM901_1/IFLAGREG/q_6" BEL
+        "UKM901_1/IFLAGREG/q_5" BEL "UKM901_1/IFLAGREG/q_4" BEL
+        "UKM901_1/IFLAGREG/q_3" BEL "UKM901_1/IFLAGREG/q_2" BEL
+        "UKM901_1/IFLAGREG/q_1" BEL "UKM901_1/IFLAGREG/q_0" BEL
+        "debug_module_inst/rotary_encoder_inst/rot_dir" BEL
+        "debug_module_inst/rotary_encoder_inst/rot_q1_del" BEL
+        "debug_module_inst/rotary_encoder_inst/rot_q2" BEL
+        "debug_module_inst/rotary_encoder_inst/rot_q1" BEL
+        "debug_module_inst/rotary_encoder_inst/rot_event" BEL
+        "debug_module_inst/rotary_encoder_inst/rot_in_1" BEL
+        "debug_module_inst/rotary_encoder_inst/rot_in_0" BEL "memory_1/oe_int"
+        BEL "UKM901_1/control/state_FSM_FFd24_1" BEL
+        "UKM901_1/control/state_FSM_FFd30_1" BEL
+        "UKM901_1/control/state_FSM_FFd20_1" BEL "UKM901_1/IR/q_1_1" BEL
+        "memory_1/mem/Mram_data2.A" BEL "memory_1/mem/Mram_data1.A" BEL
+        "clk_BUFGP/BUFG.GCLKMUX" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+SCHEMATIC END;
+
